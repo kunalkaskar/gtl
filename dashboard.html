@@ -8,50 +8,434 @@
 </head>
 <body>
 	<nav class="navbar navbar-default nav-dark" data-spy="affix" data-offset-top="60">
-	  <div class="container">
-	    <!-- Brand and toggle get grouped for better mobile display -->
-	    <div class="navbar-header">	  
-	    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>    
-	    	<a class="navbar-brand" href="#"><span class="glyphicon glyphicon-qrcode"></span> Logo</a>
-	    </div>
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">   
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>    
+            <a class="navbar-brand" href="#"><img src="img/swacch-logo.png" class="img-responsive"></a>
+        </div>
 
-	    <!-- Collect the nav links, forms, and other content for toggling -->
-	    <div class="collapse navbar-collapse" id="main-nav">
-	    	<ul class="nav navbar-nav main-nav">
-	    		<li><a href="index.html">Home</a></li>
-	    		<li class="active"><a href="dashboard.html">Dashboard</a></li>
-	    	</ul>
-	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="#">Login</a></li>
-	        <!-- <li class="dropdown">
-	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-	          <ul class="dropdown-menu">
-	            <li><a href="#">Action</a></li>
-	            <li><a href="#">Another action</a></li>
-	            <li><a href="#">Something else here</a></li>
-	            <li role="separator" class="divider"></li>
-	            <li><a href="#">Separated link</a></li>
-	          </ul>
-	        </li> -->
-	      </ul>
-	    </div><!-- /.navbar-collapse -->
-	  </div><!-- /.container-fluid -->
-	</nav>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="nav navbar-nav main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Login <span class="glyphicon glyphicon-log-in"></span></a></li>
+            <!-- <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li> -->
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
 
 	
 
-	  <div class="container">
-	  	<div class="row">
-	  		<div class="col-xs-12 col-md-7">
-	  			<div id="map"></div>
-	  		</div>
-	  	</div>
-	  </div>
+    <div class="container">
+    	<div class="row">
+    		<div class="col-xs-12 col-md-7">
+    			<div id="map"></div>
+    		</div>
+            <div class="col-xs-12 col-md-3">
+                <h2 class="text-center">Delhi</h2>
+                <div class="panel panel-default color1">
+                  <div class="panel-body">
+                    <div class="number">1000</div>
+                    <h2>Total Toilets</h2>
+                  </div>
+                </div>
+                <div class="panel panel-default color2">
+                  <div class="panel-body">
+                    <div class="number">800</div>
+                    <h2>5 Star Rated</h2>
+                  </div>
+                </div>
+                <div class="panel panel-default color3">
+                  <div class="panel-body">
+                    <div class="number">200</div>
+                    <h2>3 or less Star Rated</h2>
+                  </div>
+                </div>
+            </div>
+    	</div>
+        
+        <div class="row">
+            <div class="col-xs-12 form-inline">
+                <button class="btn btn-color-red opensearch animated flipInX"><span class="glyphicon glyphicon-search"></span></button>
+                <div class="search-form animated flipOutX">
+                    <div class="input-group">
+                      <span class="input-group-btn">
+                        <button class="btn btn-color-red" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                      </span>
+                      <input type="text" class="form-control" placeholder="Search for...">
+                      
+                    </div><!-- /input-group -->
+                    <button class="btn btn-color-blue" id="adv-search">Advanced Search</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="table-responsive">
+                    <table class="table table-bordered numeric-table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>Sr. No.</th>
+                                <th>Name</th>
+                                <th>Address</th>
+                                <th>Type</th>
+                                <th>Ratings</th>
+                                <th>Last Rated on</th>
+                                <th>Assigned To</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    Swacch Public Toilet
+                                </td>
+                                <td>
+                                    Azadpur Metro, Delhi
+                                </td>
+                                <td>
+                                    Metro
+                                </td>
+                                <td>
+                                    4.5
+                                </td>
+                                <td>
+                                    20 Jun, 2017
+                                </td>
+                                <td>
+                                    Ram Sharma
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    2
+                                </td>
+                                <td>
+                                    Swacch Public Toilet
+                                </td>
+                                <td>
+                                    Azadpur Metro, Delhi
+                                </td>
+                                <td>
+                                    Metro
+                                </td>
+                                <td>
+                                    4.5
+                                </td>
+                                <td>
+                                    20 Jun, 2017
+                                </td>
+                                <td>
+                                    Ram Sharma
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    3
+                                </td>
+                                <td>
+                                    Swacch Public Toilet
+                                </td>
+                                <td>
+                                    Azadpur Metro, Delhi
+                                </td>
+                                <td>
+                                    Metro
+                                </td>
+                                <td>
+                                    4.5
+                                </td>
+                                <td>
+                                    20 Jun, 2017
+                                </td>
+                                <td>
+                                    Ram Sharma
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    4
+                                </td>
+                                <td>
+                                    Swacch Public Toilet
+                                </td>
+                                <td>
+                                    Azadpur Metro, Delhi
+                                </td>
+                                <td>
+                                    Metro
+                                </td>
+                                <td>
+                                    4.5
+                                </td>
+                                <td>
+                                    20 Jun, 2017
+                                </td>
+                                <td>
+                                    Ram Sharma
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    5
+                                </td>
+                                <td>
+                                    Swacch Public Toilet
+                                </td>
+                                <td>
+                                    Azadpur Metro, Delhi
+                                </td>
+                                <td>
+                                    Metro
+                                </td>
+                                <td>
+                                    4.5
+                                </td>
+                                <td>
+                                    20 Jun, 2017
+                                </td>
+                                <td>
+                                    Ram Sharma
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    6
+                                </td>
+                                <td>
+                                    Swacch Public Toilet
+                                </td>
+                                <td>
+                                    Azadpur Metro, Delhi
+                                </td>
+                                <td>
+                                    Metro
+                                </td>
+                                <td>
+                                    4.5
+                                </td>
+                                <td>
+                                    20 Jun, 2017
+                                </td>
+                                <td>
+                                    Ram Sharma
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    7
+                                </td>
+                                <td>
+                                    Swacch Public Toilet
+                                </td>
+                                <td>
+                                    Azadpur Metro, Delhi
+                                </td>
+                                <td>
+                                    Metro
+                                </td>
+                                <td>
+                                    4.5
+                                </td>
+                                <td>
+                                    20 Jun, 2017
+                                </td>
+                                <td>
+                                    Ram Sharma
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    8
+                                </td>
+                                <td>
+                                    Swacch Public Toilet
+                                </td>
+                                <td>
+                                    Azadpur Metro, Delhi
+                                </td>
+                                <td>
+                                    Metro
+                                </td>
+                                <td>
+                                    4.5
+                                </td>
+                                <td>
+                                    20 Jun, 2017
+                                </td>
+                                <td>
+                                    Ram Sharma
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    9
+                                </td>
+                                <td>
+                                    Swacch Public Toilet
+                                </td>
+                                <td>
+                                    Azadpur Metro, Delhi
+                                </td>
+                                <td>
+                                    Metro
+                                </td>
+                                <td>
+                                    4.5
+                                </td>
+                                <td>
+                                    20 Jun, 2017
+                                </td>
+                                <td>
+                                    Ram Sharma
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    10
+                                </td>
+                                <td>
+                                    Swacch Public Toilet
+                                </td>
+                                <td>
+                                    Azadpur Metro, Delhi
+                                </td>
+                                <td>
+                                    Metro
+                                </td>
+                                <td>
+                                    4.5
+                                </td>
+                                <td>
+                                    20 Jun, 2017
+                                </td>
+                                <td>
+                                    Ram Sharma
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>    
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <nav aria-label="" class="text-center">
+                    <ul class="pagination pagination-lg pagination-base">
+                        <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">2 <span class="sr-only">2</span></a></li>
+                        <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="container" id="filters">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="close"><span class="glyphicon glyphicon-remove"></span></div>
+                <div class="filters">
+                    <h3>Advanced Search</h3>
+                    <form>
+                        <div class="form-group">
+                            <label>Ratings</label>
+                            <div>
+                                <input type="text" name="ratings" class="form-control rangeSlider" data-slider-min="0" data-slider-max="5" data-slider-step="1" data-slider-value="[0,5]">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Filtr by Ward</label>
+                            <select class="form-control">
+                                <option>Select Ward</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Filtr by Staff</label>
+                            <select class="form-control">
+                                <option>Select Staff</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Filtr by Type</label>
+                            <select class="form-control">
+                                <option>Select Type</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Filtr by Period</label>
+                            <select class="form-control">
+                                <option>Select Period</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>From Date</label>
+                            <input type="text" name="" class="form-control datepicker">
+                        </div>
+                        <div class="form-group">
+                            <label>To Date</label>
+                            <input type="text" name="" class="form-control datepicker">
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-12 col-md-6">
+                                <button class="btn btn-color-blue btn-block">Search</button>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <button class="btn btn-color-red btn-block">Clear</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-2 col-md-offset-4 text-center">
+                    <img src="img/swacch-logo.png" class="img-responsive"> <br>
+                    <img src="img/ministry-logo.png" class="img-responsive">
+                </div>
+                <div class="col-xs-12 col-md-2 col-md-offset-1">
+                    <ul class="nav nav-stacked">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html">Dashboard</a></li>
+                        <li><a href="index.html">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <p class="footer-text">&copy; Copyright 2017</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 	<script src="./js/main.min.js"></script>
 
 	<script src="https://code.highcharts.com/maps/modules/data.js"></script>
@@ -62,54 +446,7 @@
 	
 
 	<script type="text/javascript">
-		// Prepare demo data
-// Data is joined to map using value of 'hc-key' property by default.
-// See API docs for 'joinBy' for more info on linking data and map.
-/*var data = [
-    ['in-an', 0],
-    ['in-wb', 1],
-    ['in-ld', 2],
-    ['in-5390', 3],
-    ['in-py', 4],
-    ['in-3464', 5],
-    ['in-mz', 6],
-    ['in-as', 7],
-    ['in-pb', 8],
-    ['in-ga', 9],
-    ['in-2984', 10],
-    ['in-jk', 11],
-    ['in-hr', 12],
-    ['in-nl', 13],
-    ['in-mn', 14],
-    ['in-tr', 15],
-    ['in-mp', 16],
-    ['in-ct', 17],
-    ['in-ar', 18],
-    ['in-ml', 19],
-    ['in-kl', 20],
-    ['in-tn', 21],
-    ['in-ap', 22],
-    ['in-ka', 23],
-    ['in-mh', 24],
-    ['in-or', 25],
-    ['in-dn', 26],
-    ['in-dl', 27],
-    ['in-hp', 28],
-    ['in-rj', 29],
-    ['in-up', 30],
-    ['in-ut', 31],
-    ['in-jh', 32],
-    ['in-ch', 33],
-    ['in-br', 34],
-    ['in-sk', 35]
-];*/
-
-/*
-TODO:
-- Check data labels after drilling. Label rank? New positions?
-- Not US Mainland text
-- Separators
-*/
+		
 
 var data = Highcharts.geojson(Highcharts.maps['countries/in/custom/in-all-disputed']),
     // Some responsiveness
@@ -125,13 +462,15 @@ $.each(data, function (i) {
 Highcharts.mapChart('map', {
     chart: {
     },
-    colors : ['#9900CC'],
+    colors : ['#9900CC', '#9900CC'],
     title: {
         text: ''
     },
-
+    legend:{
+        enabled: false
+    },
     subtitle: {
-        text: 'India',
+        text: '',
         floating: true,
         align: 'right',
         y: 50,
@@ -149,44 +488,75 @@ Highcharts.mapChart('map', {
     },
 
     plotOptions: {
-        map: {
-            states: {
-                hover: {
-                    color: '#29A300'
-                }
+        series: {
+            tooltip: {
+                headerFormat: '',
+                pointFormat: '{point.name}'
             }
         }
     },
 
-    series: [{
-        name: 'Delhi',
-                        data: [{
+    series: [
+        {
+            type:'map',
+            data : [{
             name: "Delhi",
             path: "M982,-367L977,-391,948,-471,945,-486,945,-505,937,-530,924,-560,768,-700,755,-749,727,-786,748,-834,718,-909,627,-875,616,-875,590,-883,565,-894,476,-920,458,-920,442,-902,431,-886,395,-855,332,-859,282,-842,235,-815,215,-796,202,-770,198,-747,197,-718,203,-604,200,-570,203,-555,216,-531,223,-505,206,-480,173,-449,166,-430,161,-386,150,-373,132,-368,97,-363,76,-354,66,-342,47,-304,6,-263,0,-244,3,-228,18,-209,47,-181,58,-168,66,-155,69,-142,71,-133,76,-112,144,-131,252,-141,281,-146,295,-152,297,-180,308,-197,319,-202,332,-200,463,-133,473,-121,479,-109,500,-46,508,-31,521,-15,547,4,592,30,623,51,703,80,765,69,784,58,794,48,795,37,790,24,779,8,766,-4,760,-18,766,-34,797,-63,827,-83,852,-92,965,-113,918,-209,906,-223,913,-255,921,-270,932,-283,961,-310,973,-321,981,-334,984,-349,982,-367"
-        }],
-                        dataLabels: {
-                            enabled: false,
-                            format: '{point.name}'
-                        }
-    }],
-
-    drilldown: {
-        activeDataLabelStyle: {
-            color: '#FFFFFF',
-            textDecoration: 'none',
-            textOutline: '1px #000000'
+        }]
         },
-        drillUpButton: {
-            relativeTo: 'spacingBox',
-            position: {
-                x: 0,
-                y: 60
+        {
+            type :'mappoint',
+            name: 'Delhi',
+            marker: {
+                    "fillColor": "white",
+                    "lineColor": "black",
+                    "lineWidth": 1,
+                    "radius": 3
+                },
+            data: [
+                {"name":'NDMC- North Delhi Municipal Corporation',"x":500, "y":-700},
+                {"name":'EDMC- East Delhi Municipal Corporation', "x":900, "y":-500},
+                {"name":'SDMC- South Delhi Municipal Corporation', "x":700, "y":-250},
+                {"name":'NDMC- New Delhi Municipal Council', "x":800, "y":-350},
+                {"name":'Delhi Cantonment', "x":500, "y":-300},
+                {"name":'Faridabad', "x":900, "y":-50},
+                {"name":'Ghaziabad/Noida', "x":1000, "y":-550},
+                {"name":'Gurugram', "x":310, "y":-50}
+                ],
+           events : {
+            click : function(e) {
+                console.log(e.point.name);
             }
-        }
-    },
+           }
+    }
+    ],
     credits : {
     	enabled:false
     }
+});
+
+$(document).ready(function() {
+    $('.opensearch').on('click', function() {
+        $('.search-form').addClass('animated flipInX');
+        $(this).removeClass('flipInX').addClass('animated flipOutX');
+    });
+
+    var rangeSlider = $("input.rangeSlider").bootstrapSlider();
+
+    $("#adv-search").on('click', function() {
+        $("#filters").addClass('open');
+    });
+    $(".close").on('click', function() {
+        $("#filters").removeClass('open');
+    });
+
+    $('.datepicker').datepicker();
+
+    $('.numeric-table tr').each(function() {
+        $(this).on('click', function() {
+            window.location.href = 'toilet-details.html';
+        })
+    })
 });
 
 	</script>
