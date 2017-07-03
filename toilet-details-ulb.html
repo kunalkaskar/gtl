@@ -27,23 +27,19 @@
                 <li class="active"><a href="dashboard.html">Dashboard</a></li>
             </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="ulb-dashboard.html">Login <span class="glyphicon glyphicon-log-in"></span></a></li>
-            <!-- <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <!-- <li><a href="#">Login <span class="glyphicon glyphicon-log-in"></span></a></li> -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Welecome ULB <span class="glyphicon glyphicon-user"></span> <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
+                <li><a href="#">Logout</a></li>
               </ul>
-            </li> -->
+            </li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
     <div class="container toilet-details">
-        <a class="btn btn-color-blue back-button" href="dashboard.html" role="button"><span class="glyphicon glyphicon-chevron-left"></span> Back to List</a>
+        <a class="btn btn-color-blue back-button" href="ulb-dashboard.html" role="button"><span class="glyphicon glyphicon-chevron-left"></span> Back to List</a>
         <div class="hero-img">
             
 
@@ -116,7 +112,9 @@
                 </div>
             </div>
             <div class="col-xs-12 col-md-6">
-                
+                <div id="pie-chart-2">
+                    
+                </div>
             </div>
         </div>
     </div>
@@ -155,7 +153,7 @@
                 type: 'pie'
             },
             title: {
-                text: 'Ratings'
+                text: 'Overall Ratings'
             },
             tooltip: {
                 pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -200,7 +198,58 @@
             }
         });
 
-
+Highcharts.chart('pie-chart-2', {
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            title: {
+                text: 'Last 6 days Performance'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: true,
+                        format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                        style: {
+                            color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                        }
+                    }
+                }
+            },
+            series: [{
+                name: 'share',
+                colorByPoint: true,
+                data: [{
+                    name: '5 Stars',
+                    y: 56.33
+                }, {
+                    name: '4 Stars',
+                    y: 24.03,
+                    sliced: true,
+                    selected: true
+                }, {
+                    name: '3 Stars',
+                    y: 10.38
+                }, {
+                    name: '2 Stars',
+                    y: 4.77
+                }, {
+                    name: '1 Stars',
+                    y: 0.93
+                }]
+            }],
+            credits : {
+                enabled: false
+            }
+        });
 
 $(document).ready(function() {
 });

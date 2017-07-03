@@ -27,17 +27,13 @@
                 <li class="active"><a href="dashboard.html">Dashboard</a></li>
             </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="ulb-dashboard.html">Login <span class="glyphicon glyphicon-log-in"></span></a></li>
-            <!-- <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <!-- <li><a href="#">Login <span class="glyphicon glyphicon-log-in"></span></a></li> -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Welecome ULB <span class="glyphicon glyphicon-user"></span> <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
+                <li><a href="#">Logout</a></li>
               </ul>
-            </li> -->
+            </li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -45,36 +41,10 @@
 
 	
 
-    <div class="container">
-    	<div class="row">
-    		<div class="col-xs-12 col-md-7">
-    			<div id="map"></div>
-    		</div>
-            <div class="col-xs-12 col-md-3">
-                <h2 class="text-center" id="area-name">Delhi</h2>
-                <div class="panel panel-default color1">
-                  <div class="panel-body">
-                    <div class="number counter" data-start="0" data-end="1002" data-timer="1000" id="total-star">1000</div>
-                    <h2>Total Toilets</h2>
-                  </div>
-                </div>
-                <div class="panel panel-default color2">
-                  <div class="panel-body">
-                    <div class="number counter" data-start="0" data-end="800" data-timer="1000" id="star-5">800</div>
-                    <h2>5 Stars Rated</h2>
-                  </div>
-                </div>
-                <div class="panel panel-default color3">
-                  <div class="panel-body">
-                    <div class="number counter" data-start="0" data-end="200" data-timer="1000" id="star-3">200</div>
-                    <h2>3 or less Stars Rated</h2>
-                  </div>
-                </div>
-            </div>
-    	</div>
+    <div class="container spacing">
         
         <div class="row">
-            <div class="col-xs-12 form-inline">
+            <div class="col-xs-12 col-md-6 form-inline">
                 <button class="btn btn-color-red opensearch animated flipInX"><span class="glyphicon glyphicon-search"></span></button>
                 <div class="search-form animated flipOutX">
                     <div class="input-group">
@@ -86,6 +56,9 @@
                     </div><!-- /input-group -->
                     <button class="btn btn-color-blue" id="adv-search">Advanced Search</button>
                 </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <button class="btn btn-color-red pull-right">Email Report</button>
             </div>
         </div>
 
@@ -115,8 +88,25 @@
                                 <td>
                                     Azadpur Metro, Delhi
                                 </td>
-                                <td>
-                                    Metro
+                                <td class="edit-type">
+                                    <div class="type-text">
+                                        <span class="type-value">Metro</span> <span class="glyphicon glyphicon-pencil"></span>
+                                    </div>
+                                    <div class="edit-box" style="display: none;">
+                                        <div class="input-group">
+                                            <select class="form-control">
+                                                <option value="Metro">Metro</option>
+                                                <option value="Hospital">Hospital</option>
+                                                <option value="MISC">MISC</option>
+                                            </select>
+                                            <span class="input-group-btn">
+                                               <button class="btn btn-default" type="button"> <span class="glyphicon glyphicon-ok"></span>
+                                                </button>
+                                            </span>
+                                        </div><!-- /input-group -->
+                                        
+                                        
+                                    </div>
                                 </td>
                                 <td>
                                     4.5
@@ -138,8 +128,25 @@
                                 <td>
                                     Azadpur Metro, Delhi
                                 </td>
-                                <td>
-                                    Metro
+                                <td class="edit-type">
+                                    <div class="type-text">
+                                        <span class="type-value">Metro</span> <span class="glyphicon glyphicon-pencil"></span>
+                                    </div>
+                                    <div class="edit-box" style="display: none;">
+                                        <div class="input-group">
+                                            <select class="form-control">
+                                                <option value="Metro">Metro</option>
+                                                <option value="Hospital">Hospital</option>
+                                                <option value="MISC">MISC</option>
+                                            </select>
+                                            <span class="input-group-btn">
+                                               <button class="btn btn-default" type="button"> <span class="glyphicon glyphicon-ok"></span>
+                                                </button>
+                                            </span>
+                                        </div><!-- /input-group -->
+                                        
+                                        
+                                    </div>
                                 </td>
                                 <td>
                                     4.5
@@ -161,8 +168,25 @@
                                 <td>
                                     Azadpur Metro, Delhi
                                 </td>
-                                <td>
-                                    Metro
+                                <td class="edit-type">
+                                    <div class="type-text">
+                                        <span class="type-value">Metro</span> <span class="glyphicon glyphicon-pencil"></span>
+                                    </div>
+                                    <div class="edit-box" style="display: none;">
+                                        <div class="input-group">
+                                            <select class="form-control">
+                                                <option value="Metro">Metro</option>
+                                                <option value="Hospital">Hospital</option>
+                                                <option value="MISC">MISC</option>
+                                            </select>
+                                            <span class="input-group-btn">
+                                               <button class="btn btn-default" type="button"> <span class="glyphicon glyphicon-ok"></span>
+                                                </button>
+                                            </span>
+                                        </div><!-- /input-group -->
+                                        
+                                        
+                                    </div>
                                 </td>
                                 <td>
                                     4.5
@@ -184,8 +208,25 @@
                                 <td>
                                     Azadpur Metro, Delhi
                                 </td>
-                                <td>
-                                    Metro
+                                <td class="edit-type">
+                                    <div class="type-text">
+                                        <span class="type-value">Metro</span> <span class="glyphicon glyphicon-pencil"></span>
+                                    </div>
+                                    <div class="edit-box" style="display: none;">
+                                        <div class="input-group">
+                                            <select class="form-control">
+                                                <option value="Metro">Metro</option>
+                                                <option value="Hospital">Hospital</option>
+                                                <option value="MISC">MISC</option>
+                                            </select>
+                                            <span class="input-group-btn">
+                                               <button class="btn btn-default" type="button"> <span class="glyphicon glyphicon-ok"></span>
+                                                </button>
+                                            </span>
+                                        </div><!-- /input-group -->
+                                        
+                                        
+                                    </div>
                                 </td>
                                 <td>
                                     4.5
@@ -207,8 +248,25 @@
                                 <td>
                                     Azadpur Metro, Delhi
                                 </td>
-                                <td>
-                                    Metro
+                                <td class="edit-type">
+                                    <div class="type-text">
+                                        <span class="type-value">Metro</span> <span class="glyphicon glyphicon-pencil"></span>
+                                    </div>
+                                    <div class="edit-box" style="display: none;">
+                                        <div class="input-group">
+                                            <select class="form-control">
+                                                <option value="Metro">Metro</option>
+                                                <option value="Hospital">Hospital</option>
+                                                <option value="MISC">MISC</option>
+                                            </select>
+                                            <span class="input-group-btn">
+                                               <button class="btn btn-default" type="button"> <span class="glyphicon glyphicon-ok"></span>
+                                                </button>
+                                            </span>
+                                        </div><!-- /input-group -->
+                                        
+                                        
+                                    </div>
                                 </td>
                                 <td>
                                     4.5
@@ -230,8 +288,25 @@
                                 <td>
                                     Azadpur Metro, Delhi
                                 </td>
-                                <td>
-                                    Metro
+                                <td class="edit-type">
+                                    <div class="type-text">
+                                        <span class="type-value">Metro</span> <span class="glyphicon glyphicon-pencil"></span>
+                                    </div>
+                                    <div class="edit-box" style="display: none;">
+                                        <div class="input-group">
+                                            <select class="form-control">
+                                                <option value="Metro">Metro</option>
+                                                <option value="Hospital">Hospital</option>
+                                                <option value="MISC">MISC</option>
+                                            </select>
+                                            <span class="input-group-btn">
+                                               <button class="btn btn-default" type="button"> <span class="glyphicon glyphicon-ok"></span>
+                                                </button>
+                                            </span>
+                                        </div><!-- /input-group -->
+                                        
+                                        
+                                    </div>
                                 </td>
                                 <td>
                                     4.5
@@ -253,8 +328,25 @@
                                 <td>
                                     Azadpur Metro, Delhi
                                 </td>
-                                <td>
-                                    Metro
+                                <td class="edit-type">
+                                    <div class="type-text">
+                                        <span class="type-value">Metro</span> <span class="glyphicon glyphicon-pencil"></span>
+                                    </div>
+                                    <div class="edit-box" style="display: none;">
+                                        <div class="input-group">
+                                            <select class="form-control">
+                                                <option value="Metro">Metro</option>
+                                                <option value="Hospital">Hospital</option>
+                                                <option value="MISC">MISC</option>
+                                            </select>
+                                            <span class="input-group-btn">
+                                               <button class="btn btn-default" type="button"> <span class="glyphicon glyphicon-ok"></span>
+                                                </button>
+                                            </span>
+                                        </div><!-- /input-group -->
+                                        
+                                        
+                                    </div>
                                 </td>
                                 <td>
                                     4.5
@@ -276,8 +368,25 @@
                                 <td>
                                     Azadpur Metro, Delhi
                                 </td>
-                                <td>
-                                    Metro
+                                <td class="edit-type">
+                                    <div class="type-text">
+                                        <span class="type-value">Metro</span> <span class="glyphicon glyphicon-pencil"></span>
+                                    </div>
+                                    <div class="edit-box" style="display: none;">
+                                        <div class="input-group">
+                                            <select class="form-control">
+                                                <option value="Metro">Metro</option>
+                                                <option value="Hospital">Hospital</option>
+                                                <option value="MISC">MISC</option>
+                                            </select>
+                                            <span class="input-group-btn">
+                                               <button class="btn btn-default" type="button"> <span class="glyphicon glyphicon-ok"></span>
+                                                </button>
+                                            </span>
+                                        </div><!-- /input-group -->
+                                        
+                                        
+                                    </div>
                                 </td>
                                 <td>
                                     4.5
@@ -299,8 +408,25 @@
                                 <td>
                                     Azadpur Metro, Delhi
                                 </td>
-                                <td>
-                                    Metro
+                                <td class="edit-type">
+                                    <div class="type-text">
+                                        <span class="type-value">Metro</span> <span class="glyphicon glyphicon-pencil"></span>
+                                    </div>
+                                    <div class="edit-box" style="display: none;">
+                                        <div class="input-group">
+                                            <select class="form-control">
+                                                <option value="Metro">Metro</option>
+                                                <option value="Hospital">Hospital</option>
+                                                <option value="MISC">MISC</option>
+                                            </select>
+                                            <span class="input-group-btn">
+                                               <button class="btn btn-default" type="button"> <span class="glyphicon glyphicon-ok"></span>
+                                                </button>
+                                            </span>
+                                        </div><!-- /input-group -->
+                                        
+                                        
+                                    </div>
                                 </td>
                                 <td>
                                     4.5
@@ -322,8 +448,25 @@
                                 <td>
                                     Azadpur Metro, Delhi
                                 </td>
-                                <td>
-                                    Metro
+                                <td class="edit-type">
+                                    <div class="type-text">
+                                        <span class="type-value">Metro</span> <span class="glyphicon glyphicon-pencil"></span>
+                                    </div>
+                                    <div class="edit-box" style="display: none;">
+                                        <div class="input-group">
+                                            <select class="form-control">
+                                                <option value="Metro">Metro</option>
+                                                <option value="Hospital">Hospital</option>
+                                                <option value="MISC">MISC</option>
+                                            </select>
+                                            <span class="input-group-btn">
+                                               <button class="btn btn-default" type="button"> <span class="glyphicon glyphicon-ok"></span>
+                                                </button>
+                                            </span>
+                                        </div><!-- /input-group -->
+                                        
+                                        
+                                    </div>
                                 </td>
                                 <td>
                                     4.5
@@ -411,6 +554,7 @@
                     </form>
                 </div>
             </div>
+            
         </div>
     </div>
     <footer>
@@ -436,110 +580,10 @@
 
 	<script src="./js/main.min.js"></script>
 
-	<script src="https://code.highcharts.com/maps/modules/data.js"></script>
-	<script src="https://code.highcharts.com/maps/modules/drilldown.js"></script>
-	</script>
 	
-	<script src="https://code.highcharts.com/mapdata/countries/in/custom/in-all-disputed.js"></script> 
 	
 
 	<script type="text/javascript">
-		
-
-var data = Highcharts.geojson(Highcharts.maps['countries/in/custom/in-all-disputed']),
-    // Some responsiveness
-    small = $('#map').width() < 400;
-
-// Set drilldown pointers
-$.each(data, function (i) {
-    this.drilldown = this.properties['hc-key'];
-    this.value = i; // Non-random bogus data
-});
-
-// Instanciate the map
-Highcharts.mapChart('map', {
-    chart: {
-    },
-    colors : ['#9900CC', '#9900CC'],
-    title: {
-        text: ''
-    },
-    legend:{
-        enabled: false
-    },
-    subtitle: {
-        text: '',
-        floating: true,
-        align: 'right',
-        y: 50,
-        style: {
-            fontSize: '16px'
-        }
-    },
-
-    mapNavigation: {
-        enabled: true,
-        buttonOptions: {
-            verticalAlign: 'bottom',
-            align: 'right'
-        }
-    },
-
-    plotOptions: {
-        series: {
-            tooltip: {
-                headerFormat: '',
-                pointFormat: '{point.name}'
-            }
-        }
-    },
-
-    series: [
-        {
-            type:'map',
-            data : [{
-            name: "Delhi",
-            path: "M982,-367L977,-391,948,-471,945,-486,945,-505,937,-530,924,-560,768,-700,755,-749,727,-786,748,-834,718,-909,627,-875,616,-875,590,-883,565,-894,476,-920,458,-920,442,-902,431,-886,395,-855,332,-859,282,-842,235,-815,215,-796,202,-770,198,-747,197,-718,203,-604,200,-570,203,-555,216,-531,223,-505,206,-480,173,-449,166,-430,161,-386,150,-373,132,-368,97,-363,76,-354,66,-342,47,-304,6,-263,0,-244,3,-228,18,-209,47,-181,58,-168,66,-155,69,-142,71,-133,76,-112,144,-131,252,-141,281,-146,295,-152,297,-180,308,-197,319,-202,332,-200,463,-133,473,-121,479,-109,500,-46,508,-31,521,-15,547,4,592,30,623,51,703,80,765,69,784,58,794,48,795,37,790,24,779,8,766,-4,760,-18,766,-34,797,-63,827,-83,852,-92,965,-113,918,-209,906,-223,913,-255,921,-270,932,-283,961,-310,973,-321,981,-334,984,-349,982,-367"
-        }]
-        },
-        {
-            type :'mappoint',
-            name: 'Delhi',
-            marker: {
-                    "fillColor": "white",
-                    "lineColor": "black",
-                    "lineWidth": 1,
-                    "radius": 3
-                },
-            data: [
-                {"name":'NDMC- North Delhi Municipal Corporation',"x":500, "y":-700, "total": 500, "star5": 445, "star3":342},
-                {"name":'EDMC- East Delhi Municipal Corporation', "x":900, "y":-500, "total": 500, "star5": 445, "star3":342},
-                {"name":'SDMC- South Delhi Municipal Corporation', "x":700, "y":-250, "total": 500, "star5": 445, "star3":342},
-                {"name":'NDMC- New Delhi Municipal Council', "x":800, "y":-350, "total": 500, "star5": 445, "star3":342},
-                {"name":'Delhi Cantonment', "x":500, "y":-300, "total": 500, "star5": 445, "star3":342},
-                {"name":'Faridabad', "x":900, "y":-50, "total": 500, "star5": 445, "star3":342},
-                {"name":'Ghaziabad/Noida', "x":1000, "y":-550, "total": 500, "star5": 445, "star3":342},
-                {"name":'Gurugram', "x":310, "y":-50, "total": 500, "star5": 445, "star3":342}
-                ],
-           events : {
-            click : function(e) {
-                if(e.point.name.match('-')){
-                    var areaName = e.point.name.split('-')[0];
-                }else {
-                    var areaName = e.point.name;
-                }
-                $('#area-name').text(areaName);
-                $('#total-star').counter({end:e.point.total});
-                $('#star-5').counter({end:e.point.star5});
-                $('#star-3').counter({end:e.point.star3});
-            }
-           }
-    }
-    ],
-    credits : {
-    	enabled:false
-    }
-});
 
 $(document).ready(function() {
     $('.opensearch').on('click', function() {
@@ -560,11 +604,29 @@ $(document).ready(function() {
 
     $('#listing-table tr').each(function() {
         $(this).on('click', function() {
-            window.location.href = 'toilet-details.html';
+            window.location.href = 'toilet-details-ulb.html';
+        })
+    });
+
+    $('#listing-table tr .edit-type').each(function() {
+        $(this).on('click', function(e) {
+            e.stopPropagation();
+            $(this).find('.edit-box').show();
+            $(this).find('.type-text').hide();
+            
+        })
+    });
+
+    $('#listing-table tr .edit-type .btn').each(function() {
+        $(this).on('click', function(e) {
+            e.stopPropagation();
+            var val = $(this).parents('.edit-box').find('.form-control').val();
+            $(this).parents().find('.edit-box').hide();
+            $(this).parents('.edit-type').find('.type-value').text(val);
+            $(this).parents().find('.type-text').show();
+            
         })
     })
-
-    $('.counter').counter();
 });
 
 	</script>
